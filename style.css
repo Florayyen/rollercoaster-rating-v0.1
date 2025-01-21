@@ -53,6 +53,17 @@ button div {
   text-align: center;
 }
 
+button a {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+button a:hover {
+  text-decoration: underline;
+}
+
 #ranking {
   margin-top: 30px;
 }
