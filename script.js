@@ -51,15 +51,17 @@ function pickTwoRandom(list) {
 function showRandomChoices() {
   const [a, b] = pickTwoRandom(achterbahnen);
 
-  // Option 1 mit Bild und Text
+  // Option 1 mit Bild, Text und Credits
   option1.innerHTML = `
     <img src="${a.image}" alt="${a.name}" />
     <div>${a.name}<br>${a.park}</div>
+    <a href="${a.image}" target="_blank" style="font-size: 12px; color: #007BFF; text-decoration: none;">Credits</a>
   `;
-  // Option 2 mit Bild und Text
+  // Option 2 mit Bild, Text und Credits
   option2.innerHTML = `
     <img src="${b.image}" alt="${b.name}" />
     <div>${b.name}<br>${b.park}</div>
+    <a href="${b.image}" target="_blank" style="font-size: 12px; color: #007BFF; text-decoration: none;">Credits</a>
   `;
 
   // Klick-Handler setzen
